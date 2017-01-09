@@ -1,44 +1,3 @@
-set nocompatible              " be iMproved, require
-filetype off                  " required
-
-" set the runtime path to include Vundle and initialize
-  set rtp+=~/vim/.vim/bundle/Vundle.vim
-  call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-" call vundle#begin('~/Dropbox/vim/')
-
-" let Vundle manage Vundle, required
-  Plugin 'VundleVim/Vundle.vim'
-
-" http://vimawesome.com/plugin/the-nerd-tree {
-  Plugin 'scrooloose/nerdtree'
-  let NERDTreeWinSize=30
-  let NERDTreeShowHidden=1
-  let NERDTreeKeepTreeInNewTab=1
-" } Config Plugin End
-
-  Plugin 'tpope/vim-fugitive'
-  Plugin 'tpope/vim-surround'
-  Plugin 'kien/ctrlp.vim'
-  Plugin 'scrooloose/syntastic'
-  Plugin 'bling/vim-airline'
-  Plugin 'vim-airline/vim-airline-themes'
-  Plugin 'altercation/vim-colors-solarized'
-  Plugin 'rking/ag.vim'
-  Plugin 'valloric/youcompleteme'
-  Plugin 'jelera/vim-javascript-syntax'
-  Plugin 'nathanaelkane/vim-indent-guides'
-  Plugin 'pangloss/vim-javascript'
-" http://vimcasts.org/episodes/aligning-text-with-tabular-vim/
-  Plugin 'godlygeek/tabular'
-
-
-
-" All of your Plugins must be added before the following line
-  call vundle#end()            " required
-  filetype plugin indent on    " required
-
-" Basic Options
 set nocompatible              " be iMproved, required
 
 filetype off                  " required
@@ -187,9 +146,9 @@ filetype off                  " required
   "http://vimawesome.com/plugin/instant-markdown-vim
    " Plugin 'suan/vim-instant-markdown'
    " filetype plugin on
-
-   "http://vimawesome.com/plugin/notes-vim
-   Plugin 'xolox/vim-notes'
+  " http://vimawesome.com/plugin/vim-autoformat {
+    Plugin 'chiel92/vim-autoformat'
+  " }
 
   " http://vimawesome.com/plugin/indentline {
       Plugin 'Yggdroot/indentLine'
